@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --vermelho-destaque: #8E2424;
+    --vermelho-hover:  #bb3838;
+    --cinza-escuro: #101828;
+    --cinza-medio: #667085;
+    --cinza-claro: #eeeeee;
+    --branco: #FFFFFF;
+
+    --fonte-principal: "Inter", sans-serif;
+}
+
+.navegacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+}
+
+.menu {
+    display: none;
+    font-size: 25px;
+    padding: 6px 12px;
+    background-color: transparent;
+    color: #8E2424;
+    position: relative;
+    border: none;
+    outline: none;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.nome-empresa {
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--cinza-escuro);
+}
+
+.ancora {
+    margin-left: -500px;
+}
+
+.ancora-vertical {
+    display: none;
+}
+
+.ancora-link, .login-link {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cinza-medio);
+    text-decoration: none;
+    margin-right: 32px;
+}
+
+.login-link {
+    margin-right: 16px
+}
+
+.ancora-link:hover, .login-link:hover {
+    color: var(--vermelho-destaque);
+    transition: color 0.3s ease;
+}
+
+.estilizado {
+    padding: 10px 18px;
+    border-radius: 8px;
+    background-color: var(--vermelho-destaque);
+    color: var(--branco);
+}
+
+.estilizado:hover {
+    cursor: pointer;
+    background-color: var(--vermelho-hover);
+    color: var(--branco);
+    transition: color 0.3s ease;
+}
+
+.sobre-nos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    gap: 48px;
+}
+
+.sobre-nos-topico {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--vermelho-destaque);
+}
+
+.sobre-nos-titulo {
+    font-family: var(--fonte-principal);
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--cinza-escuro);
+}
+
+.sobre-nos-texto {
+    width: 50%;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--cinza-medio);
+}
+
+.lista-informacoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    padding: 0 112px;
+}
+
+.lista-informacoes-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 25%;
+}
+
+.informacao-numero {
+    font-family: var(--fonte-principal);
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--vermelho-destaque);
+}
+
+.informacao-titulo {
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--cinza-escuro);
+}
+
+.informacao-texto {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--cinza-medio);
+}
+
+.vagas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    margin-top: 150px;
+    gap: 36px;
+}
+
+.vagas-topico {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--vermelho-destaque);
+}
+
+.vagas-titulo {
+    font-family: var(--fonte-principal);
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--cinza-escuro);
+}
+
+.vagas-texto {
+    width: 50%;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--cinza-medio);
+    margin-bottom: 40px;
+}
+
+.vagas-imagem1,.vagas-imagem2{
+    max-width: 100%;
+    height: auto;
+}
+
+.vagas-imagem2{
+    display: none;
+}
+
+.lista-vagas {
+    width: 786px;
+}
+
+.area-vaga {
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--cinza-escuro);
+    margin: 50px 0 32px 0;
+}
+
+.lista-vagas-item {
+    padding: 24px 24px 24px 28px;
+    border: 1px solid var(--cinza-medio);
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.vaga-titulo {
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--cinza-escuro);
+    margin-bottom: 32px;
+}
+
+.vaga-descricao {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    color: var(--cinza-medio);
+    margin-bottom: 8px;
+}
+
+.avaliacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 64px;
+    margin: 96px 112px;
+    background-color: #fce9e9;
+}
+
+.avaliacao-topico {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--vermelho-destaque);
+    margin-bottom: 16px;
+}
+
+.avaliacao-texto {
+    font-family: var(--fonte-principal);
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--cinza-escuro);
+    width: 80%;
+    margin-bottom: 32px;
+}
+
+.usuario-nome {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cinza-escuro);
+    margin: 16px 0 8px 0;
+}
+
+.usuario-cargo {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    color: var(--cinza-medio);
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 96px 304px;
+    background-color: var(--cinza-claro);
+}
+
+.cadastro-titulo {
+    font-family: var(--fonte-principal);
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--cinza-escuro);
+}
+
+.cadastro-texto {
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    color: var(--cinza-medio);
+}
+
+.input-cadastro {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    width: 360px;
+    padding: 14px;
+    border: 1px solid #b1b0b0;
+    border-radius: 8px;
+    outline: none;
+}
+
+.btn-cadastro {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    width: 116px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    color: var(--branco);
+    background-color: var(--vermelho-destaque);
+}
+
+.btn-cadastro:hover {
+    cursor: pointer;
+    background-color: var(--vermelho-hover);
+    transition: color 0.3s ease;
+}
+
+.copyright-notice {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    color: var(--cinza-medio);
+}
+
+@media screen and (max-width: 1400px) {
+    .ancora {
+        margin-left: -100px;
+    }
+
+    .vagas {
+        margin-top: 100px;
+    }
+
+    .area-vaga {
+        margin: 42px 0 32px 0
+    }
+
+    .vagas-imagem1 {
+        height: 350px;
+        width: 900px;
+    }
+
+    .cadastro {
+        padding: 70px;
+    }
+
+    .cadastro-formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .nome-empresa {
+        display: none;
+    }
+    
+    .ancora {
+        margin-left: -30px;
+    }
+}
+
+@media screen and (max-width: 740px) {  
+
+    .nome-empresa {
+        display: block;
+    }
+
+    .navegacao {
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .clicked {
+        background-color: var(--vermelho-destaque);
+        color: var(--branco);
+    }
+
+    .logo {
+        gap: 6px;
+        margin-left: -40px;
+    }
+
+    .nome-empresa {
+        font-size: 16px;
+    }
+    
+    .ancora {
+        display: none;
+    }
+
+    .ancora-vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        position: absolute;
+        top: 45px;
+        width: 40%;
+        height: 50vh;
+        background-color: var(--vermelho-destaque);
+    }
+
+    .ancora-vertical-link {
+        font-family: var(--fonte-principal);
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--branco);
+        text-decoration: none;
+        padding: 8px 16px;
+        margin-top: 8px;
+    }
+
+    .login-link {
+        font-size: 16px;
+        margin-right: 8px;
+    }
+
+    .estilizado {
+        padding: 0;
+        background-color: transparent;
+        color: var(--vermelho-destaque);
+    }
+
+    .logo, .ancora, .login {
+        padding: 8px;
+    }
+
+    .sobre-nos {
+        height: 30vh;
+        gap: 16px;
+    }
+
+    .sobre-nos-topico {
+        font-size: 16px;
+    }
+
+    .sobre-nos-titulo  {
+        font-family: var(--fonte-principal);
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--cinza-escuro);
+    }
+
+    .sobre-nos-texto {
+        width: 90%;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .lista-informacoes {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding: 20px;
+    }
+
+    .lista-informacoes-item {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .informacao-numero {
+        font-size: 36px;
+    }
+
+    .vagas {
+        margin-top: 50px;
+        gap: 16px;
+    }
+
+    .vagas-titulo {
+        font-size: 18px;
+    }
+
+    .vagas-texto {
+        width: 80%;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 23px;
+    }
+    
+    .vagas-imagem1{
+        display: none;
+    }
+
+    .vagas-imagem2 {
+        display: block;
+        width: 340px;
+        height: 220px;
+    }
+
+    .area-vaga {
+        font-size: 16px
+    }
+
+    .lista-vagas {
+        width: 320px;
+    }
+
+    .vaga-titulo {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .avaliacoes {
+        padding: 16px 0;
+        margin: 32px 20px 42px 20px;
+        border-radius: 8px;
+    }
+
+    .avaliacao-topico {
+        font-size: 14px;
+    }
+
+    .avaliacao-texto {
+        font-size: 16px;
+        width: 90%;
+        margin-bottom: 32px;
+    }
+
+    .usuario-nome {
+        font-size: 14px;
+    }
+
+    .usuario-cargo {
+        font-size: 12px;
+    }
+
+    .cadastro {
+        padding: 28px 16px;
+        gap: 16px;
+    }
+
+    .cadastro-titulo {
+        font-size: 18px;
+    }
+
+    .cadastro-texto {
+        font-size: 16px;
+    }
+
+    .input-cadastro {
+        width: 180px;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .btn-cadastro {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .copyright-notice {
+        font-size: 14px;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
