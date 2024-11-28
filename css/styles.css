@@ -408,8 +408,8 @@
         justify-content: start;
         position: absolute;
         top: 45px;
-        width: 40%;
-        height: 50vh;
+        width: 32%;
+        height: 28vh;
         background-color: var(--vermelho-destaque);
     }
 
@@ -419,8 +419,8 @@
         font-weight: 500;
         color: var(--branco);
         text-decoration: none;
-        padding: 8px 16px;
-        margin-top: 8px;
+        padding: 10px 16px;
+        margin-top: 12px;
     }
 
     .login-link {
@@ -439,6 +439,7 @@
     }
 
     .sobre-nos {
+        margin-top: 40px;
         height: 30vh;
         gap: 16px;
     }
@@ -463,23 +464,30 @@
     .lista-informacoes {
         flex-direction: column;
         align-items: center;
-        gap: 32px;
+        gap: 22px;
         padding: 20px;
     }
 
     .lista-informacoes-item {
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
         width: 100%;
+        margin-top: 40px;
     }
 
     .informacao-numero {
         font-size: 36px;
     }
 
+    .informacao-texto {
+        width: 70%;
+    }
+
     .vagas {
-        margin-top: 50px;
+        margin-top: 70px;
         gap: 16px;
     }
 
@@ -505,7 +513,8 @@
     }
 
     .area-vaga {
-        font-size: 16px
+        font-size: 16px;
+        margin: 28px 0 28px 0;
     }
 
     .lista-vagas {
@@ -518,8 +527,8 @@
     }
 
     .avaliacoes {
-        padding: 16px 0;
-        margin: 32px 20px 42px 20px;
+        padding: 24px 0;
+        margin: 60px 20px;
         border-radius: 8px;
     }
 
